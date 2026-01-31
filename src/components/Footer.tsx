@@ -8,7 +8,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br from-primary via-primary to-primary text-primary-foreground">
+    <footer className="bg-gradient-to-br from-primary via-primary to-primary text-primary-foreground relative">
+      {/* Moroccan zellige pattern decoration */}
+      <div className="absolute top-0 left-0 right-0 h-1 zellige-separator" />
+      
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">

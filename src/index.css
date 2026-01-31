@@ -2,36 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* New color palette */
-    /* Gris Perle - Background */
-    --background: 210 15% 97%;
-    --foreground: 225 20% 20%;
+    /* Nouvelle palette de couleurs - Charte Graphique Marocaine */
+    /* Gris Perle - Background & Clarity */
+    --background: 210 18% 96%;
+    --foreground: 213 32% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 225 20% 20%;
+    --card-foreground: 213 32% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 225 20% 20%;
+    --popover-foreground: 213 32% 17%;
 
-    /* Bleu Marine Profond - Primary (Titres & Navigation) */
-    --primary: 225 68% 25%;
+    /* Bleu Profond #1B4F72 - Primary (Professionalism, Security, Institutionnel) */
+    --primary: 213 55% 32%;
     --primary-foreground: 0 0% 100%;
 
-    /* Sauge Doux - Secondary (Accents & Boutons secondaires) */
-    --secondary: 130 20% 58%;
+    /* Vert Émeraude Doux #2E867F - Secondary (Espoir, Vitalité, Identité Marocaine) */
+    --secondary: 169 52% 34%;
     --secondary-foreground: 0 0% 100%;
 
     /* Charbon Doux - Muted text */
-    --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 213 32% 17%;
+    --muted-foreground: 213 15% 40%;
 
-    /* Or Sablé - Accent (CTA buttons) */
-    --accent: 45 75% 55%;
-    --accent-foreground: 225 20% 10%;
+    /* Or Sable #D4AC0D - Accent (Chaleur, Prestige, Élégance, CTA buttons) */
+    --accent: 46 87% 42%;
+    --accent-foreground: 213 32% 10%;
 
     /* Coral/Red - Guidance, human support */
     --coral: 5 55% 55%;
@@ -40,77 +40,78 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 15% 90%;
-    --input: 210 15% 95%;
-    --ring: 225 68% 25%;
+    --border: 210 15% 92%;
+    --input: 210 15% 96%;
+    --ring: 213 55% 32%;
 
     --radius: 0.75rem;
 
     /* Sidebar colors */
-    --sidebar-background: 210 15% 97%;
-    --sidebar-foreground: 225 20% 20%;
-    --sidebar-primary: 225 68% 25%;
+    --sidebar-background: 210 18% 96%;
+    --sidebar-foreground: 213 32% 17%;
+    --sidebar-primary: 213 55% 32%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 45 75% 55%;
-    --sidebar-accent-foreground: 225 20% 10%;
-    --sidebar-border: 210 15% 90%;
-    --sidebar-ring: 225 68% 25%;
+    --sidebar-accent: 46 87% 42%;
+    --sidebar-accent-foreground: 213 32% 10%;
+    --sidebar-border: 210 15% 92%;
+    --sidebar-ring: 213 55% 32%;
 
-    /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, #F5F7FA 0%, #EBF0F7 100%);
-    --card-shadow: 0 4px 20px -4px #1A365D / 0.08;
-    --card-hover-shadow: 0 8px 30px -4px #1A365D / 0.12;
+    /* Custom tokens with Moroccan heritage */
+    --hero-gradient: linear-gradient(135deg, #F4F6F7 0%, #E8EDEF 100%);
+    --card-shadow: 0 4px 20px -4px #1B4F72 / 0.08;
+    --card-hover-shadow: 0 8px 30px -4px #1B4F72 / 0.12;
+    --zellige-pattern: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="zellige" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0,0 L10,0 L10,10 L0,10 Z" fill="%231B4F72" opacity="0.08"/><path d="M10,10 L20,10 L20,20 L10,20 Z" fill="%232E867F" opacity="0.08"/></pattern></defs><rect width="100" height="100" fill="white"/><rect width="100" height="100" fill="url(%23zellige)"/></svg>');
   }
 
   .dark {
-    --background: 225 20% 12%;
-    --foreground: 210 15% 95%;
+    --background: 213 35% 14%;
+    --foreground: 210 18% 94%;
 
-    --card: 225 20% 15%;
-    --card-foreground: 210 15% 95%;
+    --card: 213 32% 18%;
+    --card-foreground: 210 18% 94%;
 
-    --popover: 225 20% 15%;
-    --popover-foreground: 210 15% 95%;
+    --popover: 213 32% 18%;
+    --popover-foreground: 210 18% 94%;
 
-    --primary: 225 68% 40%;
-    --primary-foreground: 210 15% 95%;
+    --primary: 213 55% 45%;
+    --primary-foreground: 210 18% 94%;
 
-    --secondary: 130 15% 45%;
-    --secondary-foreground: 210 15% 95%;
+    --secondary: 169 45% 45%;
+    --secondary-foreground: 210 18% 94%;
 
-    --muted: 225 15% 35%;
+    --muted: 213 25% 35%;
     --muted-foreground: 210 15% 70%;
 
-    --accent: 45 75% 55%;
-    --accent-foreground: 225 20% 10%;
+    --accent: 46 87% 50%;
+    --accent-foreground: 213 32% 10%;
 
-    --coral: 5 55% 60%;
+    --coral: 5 55% 65%;
     --coral-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 225 15% 20%;
-    --input: 225 15% 20%;
-    --ring: 225 68% 40%;
+    --border: 213 25% 25%;
+    --input: 213 25% 25%;
+    --ring: 213 55% 45%;
 
-    --sidebar-background: 225 20% 13%;
-    --sidebar-foreground: 210 15% 95%;
-    --sidebar-primary: 225 68% 40%;
-    --sidebar-primary-foreground: 210 15% 95%;
-    --sidebar-accent: 45 75% 55%;
-    --sidebar-accent-foreground: 225 20% 10%;
-    --sidebar-border: 225 15% 20%;
-    --sidebar-ring: 225 68% 40%;
+    --sidebar-background: 213 32% 16%;
+    --sidebar-foreground: 210 18% 94%;
+    --sidebar-primary: 213 55% 45%;
+    --sidebar-primary-foreground: 210 18% 94%;
+    --sidebar-accent: 46 87% 50%;
+    --sidebar-accent-foreground: 213 32% 10%;
+    --sidebar-border: 213 25% 25%;
+    --sidebar-ring: 213 55% 45%;
   }
 
-  /* RTL Support */
+  /* RTL Support with better typography */
   [dir="rtl"] {
-    font-family: 'IBM Plex Sans Arabic', 'Inter', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', 'Roboto', sans-serif;
   }
 
   [dir="ltr"] {
-    font-family: 'Inter', 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Roboto', 'IBM Plex Sans Arabic', sans-serif;
   }
 }
 
@@ -121,7 +122,9 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Roboto', 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
   }
 
   /* Accessibility: focus states */
@@ -129,21 +132,59 @@
     @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
   }
 
-  /* Senior-friendly typography */
+  /* Senior-friendly typography with proper sizing */
   h1 {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+    font-family: 'Playfair Display', serif;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4;
+    letter-spacing: -0.5px;
   }
 
   h2 {
-    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+    font-family: 'Playfair Display', serif;
+    @apply text-3xl md:text-4xl font-semibold tracking-tight mb-3;
+    letter-spacing: -0.25px;
   }
 
   h3 {
-    @apply text-xl md:text-2xl font-semibold;
+    font-family: 'Montserrat', sans-serif;
+    @apply text-2xl md:text-3xl font-semibold mb-2;
+  }
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-xl md:text-2xl font-semibold mb-2;
   }
 
   p {
-    @apply text-lg leading-relaxed;
+    @apply text-lg leading-relaxed mb-4;
+    font-size: clamp(18px, 2.2vw, 20px);
+  }
+
+  /* Increased line height for better readability */
+  li {
+    @apply mb-2;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  /* Buttons with better sizing */
+  button, [role="button"] {
+    font-size: 16px;
+    padding: 12px 24px;
+    min-height: 48px;
+  }
+
+  /* Links with better contrast */
+  a {
+    @apply text-primary hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-ring;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  /* Remove underline from buttons */
+  button a, [role="button"] a {
+    text-decoration: none;
   }
 }
 
@@ -160,6 +201,12 @@
     box-shadow: var(--card-hover-shadow);
   }
 
+  /* Moroccan zellige pattern */
+  .zellige-pattern {
+    background-image: var(--zellige-pattern);
+    background-size: 100px 100px;
+  }
+
   /* Smooth transitions */
   .transition-smooth {
     @apply transition-all duration-300 ease-in-out;
@@ -174,4 +221,141 @@
   .section-padding {
     @apply py-12 md:py-16 lg:py-20;
   }
+
+  /* Accessibility utilities */
+  .text-lg-accessible {
+    @apply text-lg md:text-xl;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  .button-lg-accessible {
+    @apply px-6 py-4 text-lg font-semibold;
+    min-height: 56px;
+    min-width: 120px;
+  }
+
+  /* High contrast mode for accessibility */
+  .high-contrast {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --primary: 213 55% 32%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 46 87% 42%;
+  }
+
+  .high-contrast a {
+    @apply underline;
+  }
+
+  /* Focus indicators */
+  .focus-ring {
+    @apply ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Reduced motion preferences */
+  .reduce-motion * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* Large buttons mode */
+  .large-buttons button,
+  .large-buttons [role="button"] {
+    @apply px-8 py-6 text-lg;
+    min-height: 64px;
+    min-width: 160px;
+  }
+
+  /* Moroccan arch decoration */
+  .arch-decoration {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .arch-decoration::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 40px;
+    border: 3px solid currentColor;
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    opacity: 0.1;
+  }
+
+  /* Separator with zellige style */
+  .zellige-separator {
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--secondary)) 50%,
+      hsl(var(--primary)) 100%
+    );
+    margin: 2rem 0;
+  }
+
+  /* Print styles for senior-friendliness */
+  @media print {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    body {
+      background: white;
+      color: black;
+      font-size: 12pt;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a::after {
+      content: ' (' attr(href) ')';
+    }
+  }
+
+  /* Viewport-specific adjustments for seniors */
+  @media (max-width: 768px) {
+    body {
+      font-size: 20px;
+    }
+
+    button, [role="button"] {
+      min-height: 56px;
+      min-width: 100px;
+    }
+  }
+
+  /* Prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* High contrast mode preference */
+  @media (prefers-contrast: more) {
+    --border: 213 32% 17%;
+    --input: 213 32% 17%;
+
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+    }
+  }
 }
+

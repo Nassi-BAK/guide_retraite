@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Layout from "@/components/Layout";
+import AccessibilityPanel from "@/components/AccessibilityPanel";
 import Home from "./pages/Home";
 import AvantRetraite from "./pages/AvantRetraite";
 import ApresRetraite from "./pages/ApresRetraite";
@@ -20,6 +21,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <AccessibilityPanel />
         <BrowserRouter>
           <Layout>
             <Routes>
