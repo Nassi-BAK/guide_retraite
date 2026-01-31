@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Calculator, CheckCircle, AlertTriangle, TrendingUp, ArrowRight, ArrowLeft, RotateCcw, DollarSign } from 'lucide-react';
+import { Calculator, CheckCircle, AlertTriangle, TrendingUp, ArrowRight, ArrowLeft, RotateCcw, DollarSign, Calculator as CalculatorIcon } from 'lucide-react';
 import diagnosticImage from '@/assets/diagnostic.jpg';
 
 type Organization = 'cnss' | 'cmr' | 'rcar';
@@ -328,7 +328,10 @@ const Diagnostic = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.35 }}
                     >
-                      <p className="text-sm font-semibold text-foreground">{t('diagnostic.form.formula')}</p>
+                      <div className="flex items-center gap-2">
+                        <CalculatorIcon className="h-5 w-5 text-primary" />
+                        <p className="text-sm font-semibold text-foreground">{t('diagnostic.form.formula')}</p>
+                      </div>
                       <p className="text-sm text-muted-foreground">{t('diagnostic.form.formulaDesc')}</p>
                       <code className="block text-xs bg-background rounded p-2 mt-2 text-primary font-mono">
                         Pension = Salaire × (2.5% × années)
@@ -460,12 +463,12 @@ const Diagnostic = () => {
                       {result.warnings.map((warning, index) => (
                         <motion.div 
                           key={index}
-                          className="flex items-start gap-3 p-4 bg-coral/10 border border-coral/20 rounded-lg"
+                          className="flex items-start gap-3 p-4 bg-accent/10 border border-accent/20 rounded-lg"
                           initial={{ opacity: 0, x: -30 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: 0.7 + index * 0.1 }}
                         >
-                          <AlertTriangle className="h-5 w-5 text-coral shrink-0 mt-0.5" />
+                          <AlertTriangle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                           <p className="text-foreground text-sm">{warning}</p>
                         </motion.div>
                       ))}

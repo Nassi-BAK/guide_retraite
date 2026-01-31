@@ -128,7 +128,7 @@ const Ressources = () => {
                   <div className="space-y-4">
                     {/* Description */}
                     <div>
-                      <p className="text-sm font-medium text-primary mb-2">📋 {t(`resources.section.${caisse.key}.description`)}</p>
+                      <p className="text-sm font-medium text-primary mb-2">{t(`resources.section.${caisse.key}.description`)}</p>
                     </div>
 
                     {/* Contact Information */}

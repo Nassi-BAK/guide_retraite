@@ -88,7 +88,7 @@ const Home = () => {
                   <ArrowIcon className="h-5 w-5 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1" />
                 </Link>
               </Button>
-              <Button asChild size="lg" className="text-lg px-8 py-6 gap-2 bg-coral hover:bg-coral/90 text-coral-foreground group">
+              <Button asChild size="lg" className="text-lg px-8 py-6 gap-2 bg-accent hover:bg-accent/90 text-accent-foreground group">
                 <Link to="/diagnostic">
                   <ClipboardCheck className="h-5 w-5" />
                   {t('home.cta.diagnostic')}
@@ -243,7 +243,7 @@ const Home = () => {
             transition={{ duration: 0.6 }}
           >
             {/* Decorative circles */}
-            <div className="absolute -top-20 -right-20 w-40 h-40 bg-coral/10 rounded-full blur-3xl" />
+            <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
             <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
             
             <div className="relative z-10">
@@ -252,7 +252,7 @@ const Home = () => {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ type: 'spring', stiffness: 200, delay: 0.2 }}
-                className="w-20 h-20 rounded-2xl bg-coral/10 flex items-center justify-center text-coral mx-auto mb-6"
+                className="w-20 h-20 rounded-2xl bg-accent/10 flex items-center justify-center text-accent mx-auto mb-6"
               >
                 <ClipboardCheck className="h-10 w-10" />
               </motion.div>
@@ -264,7 +264,7 @@ const Home = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button asChild size="lg" className="text-lg px-10 py-6 bg-coral hover:bg-coral/90 text-coral-foreground">
+                <Button asChild size="lg" className="text-lg px-10 py-6 bg-accent hover:bg-accent/90 text-accent-foreground">
                   <Link to="/diagnostic">
                     <ClipboardCheck className="h-5 w-5 me-2" />
                     {t('home.cta.diagnostic')}

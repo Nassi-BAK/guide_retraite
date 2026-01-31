@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <motion.header 
-      className="sticky top-0 z-50 bg-gradient-to-r from-stone-600 via-stone-500 to-stone-600 backdrop-blur-sm border-b-2 border-red-600 shadow-lg"
+      className="sticky top-0 z-50 bg-gradient-to-r from-primary via-primary to-primary backdrop-blur-sm border-b-2 border-accent shadow-lg"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100, damping: 20 }}
@@ -48,7 +48,7 @@ const Header = () => {
 
           {/* Desktop Navigation - Centré avec le bouton langue intégré */}
           <nav className="hidden lg:flex items-center gap-3">
-            <div className="flex items-center gap-2 bg-stone-700/30 rounded-full px-2 py-2 backdrop-blur-sm">
+            <div className="flex items-center gap-2 bg-primary/20 rounded-full px-2 py-2 backdrop-blur-sm">
               {navItems.map((item, index) => (
                 <motion.div
                   key={item.path}
@@ -60,14 +60,14 @@ const Header = () => {
                     to={item.path}
                     className={`relative px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                       isActive(item.path)
-                        ? 'bg-red-600 text-white shadow-lg scale-105'
-                        : 'text-stone-50 hover:bg-red-500 hover:text-white hover:shadow-md'
+                        ? 'bg-accent text-accent-foreground shadow-lg scale-105'
+                        : 'text-primary-foreground hover:bg-accent hover:text-accent-foreground hover:shadow-md'
                     }`}
                   >
                     {item.label}
                     {isActive(item.path) && (
                       <motion.div
-                        className="absolute inset-0 bg-red-600 rounded-full -z-10"
+                        className="absolute inset-0 bg-accent rounded-full -z-10"
                         layoutId="activeNav"
                         transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                       />
@@ -86,7 +86,7 @@ const Header = () => {
                   variant="outline"
                   size="sm"
                   onClick={toggleLanguage}
-                  className="flex items-center gap-2 font-bold bg-white text-stone-700 border-2 border-red-500 hover:bg-red-600 hover:text-white hover:border-white transition-all duration-300 shadow-md rounded-full px-4 h-10"
+                  className="flex items-center gap-2 font-bold bg-white text-primary border-2 border-accent hover:bg-accent hover:text-accent-foreground hover:border-white transition-all duration-300 shadow-md rounded-full px-4 h-10"
                   aria-label="Change language"
                 >
                   <Globe className="h-4 w-4" />
@@ -106,7 +106,7 @@ const Header = () => {
                 variant="outline"
                 size="sm"
                 onClick={toggleLanguage}
-                className="flex items-center gap-1.5 font-bold bg-white text-stone-700 border-2 border-red-500 hover:bg-red-600 hover:text-white hover:border-white transition-all duration-300 shadow-md rounded-full px-3 h-9"
+                className="flex items-center gap-1.5 font-bold bg-white text-primary border-2 border-accent hover:bg-accent hover:text-accent-foreground hover:border-white transition-all duration-300 shadow-md rounded-full px-3 h-9"
                 aria-label="Change language"
               >
                 <Globe className="h-4 w-4" />
@@ -118,7 +118,7 @@ const Header = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="text-white hover:bg-red-500 hover:text-white transition-all duration-300 rounded-full h-9 w-9"
+              className="text-primary-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300 rounded-full h-9 w-9"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             >
@@ -159,7 +159,7 @@ const Header = () => {
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="flex flex-col gap-2 bg-stone-700/50 rounded-xl p-3 backdrop-blur-sm border border-stone-600/30">
+              <div className="flex flex-col gap-2 bg-primary/30 rounded-xl p-3 backdrop-blur-sm border border-primary/20">
                 {navItems.map((item, index) => (
                   <motion.div
                     key={item.path}
@@ -173,8 +173,8 @@ const Header = () => {
                       onClick={() => setIsMenuOpen(false)}
                       className={`px-4 py-3 rounded-lg text-base font-semibold transition-all duration-300 block ${
                         isActive(item.path)
-                          ? 'bg-red-600 text-white shadow-md'
-                          : 'text-stone-50 hover:bg-red-500 hover:text-white'
+                          ? 'bg-accent text-accent-foreground shadow-md'
+                          : 'text-primary-foreground hover:bg-accent hover:text-accent-foreground'
                       }`}
                     >
                       {item.label}
