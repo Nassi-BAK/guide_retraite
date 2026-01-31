@@ -88,7 +88,6 @@ const Diagnostic = () => {
       warnings,
     });
   };
-  };
 
   const resetForm = () => {
     setCurrentAge('');
